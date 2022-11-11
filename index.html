@@ -21,12 +21,18 @@
          <div>
 
             <div class="border border-2 rounded">
-               <img src="/assets/img/1-990-600x300.jpg" alt="" class="rounded"> 
+               <img :src="images[index].image" alt="immagini" class="rounded">
             </div>
             
             <div class="d-flex justify-content-center">
-               <i class="fa-solid fa-angle-left p-3 mx-5 fs-3" @click="changePhotoLeft"></i>
-               <i class="fa-solid fa-angle-right p-3 mx-5 fs-3" @click="changePhotoRight"></i>
+
+               <button class="mx-5 my-2 btn btn-dark" @click="changePhotoLeft">
+                  <i class="fa-solid fa-angle-left px-3 fs-3"></i>
+               </button>
+               <button class="mx-5 my-2 btn btn-dark" @click="changePhotoRight">
+                  <i class="fa-solid fa-angle-right px-3 fs-3"></i>
+               </button>
+               
             </div>
             
          </div>
