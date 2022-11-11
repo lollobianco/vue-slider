@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="./assets/css/style.css">
    <title>Slider-Foto</title>
 </head>
-<body>
+<body class="bg-dark">
    
 
    <div id="app" class="vh-100">
@@ -18,18 +18,19 @@
 
       <div class="vh-100 d-flex justify-content-center align-items-center">
 
-         <div v-for="(image, index) in images">
-            <img :src="image" alt="immagine">
-         </div> 
-
          <div>
-            <i class="fa-solid fa-angle-up" @click="changePhotoUp" ></i>
-            <i class="fa-solid fa-angle-down"></i>
+
+            <div class="border border-2 rounded">
+               <img src="/assets/img/1-990-600x300.jpg" alt="" class="rounded"> 
+            </div>
+            
+            <div class="d-flex justify-content-center">
+               <i class="fa-solid fa-angle-left p-3 mx-5 fs-3" @click="changePhotoLeft"></i>
+               <i class="fa-solid fa-angle-right p-3 mx-5 fs-3" @click="changePhotoRight"></i>
+            </div>
+            
          </div>
-
          
-
-
       </div>
 
 
