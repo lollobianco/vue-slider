@@ -14,7 +14,9 @@ var app = new Vue(
                {image: './assets/img/880-600x300.jpg'},
 
             ],
+
             index: 0
+            
 
 	      },
 
@@ -22,20 +24,26 @@ var app = new Vue(
 			
             changePhotoLeft: function (){
 
-               if( this.index == 0 ){
-                  return this.index = this.images.length;
-               }else{
+               if( this.index == 0 ){      
+                  console.log (this.index)            
+                  return this.index = this.images.length - 1;
+               } else{
+                  
+                  console.log (this.index)
                   return this.index--;
+
                }
+                  
 
             },
 		
             changePhotoRight: function (){
 
+               this.index++;
+               console.log (this.index)
+
                if( this.index >= this.images.length ){
                   return this.index = 0;
-               }else{
-                  return this.index++;
                }
 
             }
