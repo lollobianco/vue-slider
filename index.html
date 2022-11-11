@@ -12,13 +12,23 @@
 <body>
    
 
-   <div id="app" class="vh-100 vw-100">
+   <div id="app" class="vh-100">
 
 
 
-      <div class="">
+      <div class="vh-100 d-flex justify-content-center align-items-center">
 
-         <img src="" alt="immagini">
+         <div v-for="(image, index) in images">
+            <img :src="image" alt="immagine">
+         </div> 
+
+         <div>
+            <i class="fa-solid fa-angle-up" @click="changePhotoUp" ></i>
+            <i class="fa-solid fa-angle-down"></i>
+         </div>
+
+         
+
 
       </div>
 
@@ -30,6 +40,6 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-   <script src="./main.js"></script>
+   <script src="./assets/js/main.js"></script>
 </body>
 </html>
