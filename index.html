@@ -20,8 +20,13 @@
 
          <div>
 
-            <div class="border border-2 rounded">
+            <div class="border border-2 rounded position-relative">
                <img :src="images[index].image" alt="immagini" class="rounded">
+               <div id="selector" class="position-absolute d-flex align-items-center justify-content-between p-1">
+                  
+                  <span v-for="image in images" class="selectorDot mx-1"></span>
+                  
+               </div>
             </div>
             
             <div class="d-flex justify-content-center">

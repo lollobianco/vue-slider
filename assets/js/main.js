@@ -15,7 +15,7 @@ var app = new Vue(
 
             ],
 
-            index: 0
+            index: 0,
             
 
 	      },
@@ -45,6 +45,12 @@ var app = new Vue(
                if( this.index >= this.images.length ){
                   return this.index = 0;
                }
+
+            },
+
+            changePhotoDot: function(){
+
+               
 
             }
 		   }
