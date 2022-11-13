@@ -15,8 +15,18 @@ var app = new Vue(
 
             ],
 
+            dots: [ 
+               
+               {dot: 'selectedDot'},
+               {dot: 'selectedDot'},
+               {dot: 'selectedDot'},
+               {dot: 'selectedDot'},
+               {dot: 'selectedDot'},
+               {dot: 'selectedDot'},
+            ],
+
             index: 0,
-            
+            indexDot: 0,
 
 	      },
 
@@ -48,11 +58,6 @@ var app = new Vue(
 
             },
 
-            changePhotoDot: function(){
-
-               
-
-            }
 		   }
 	}
 );

@@ -24,7 +24,18 @@
                <img :src="images[index].image" alt="immagini" class="rounded">
                <div id="selector" class="position-absolute d-flex align-items-center justify-content-between p-1">
                   
-                  <span v-for="image in images" class="selectorDot mx-1"></span>
+                  <span class="selectorDot selectedDot mx-1" v-if="index==0"></span>
+                  <span class="selectorDot mx-1" v-else v-on:click="index = 0"></span>
+                  <span class="selectorDot selectedDot mx-1" v-if="index==1"></span>
+                  <span class="selectorDot mx-1" v-else v-on:click="index = 1"></span>
+                  <span class="selectorDot selectedDot mx-1" v-if="index==2"></span>
+                  <span class="selectorDot mx-1" v-else v-on:click="index = 2"></span>
+                  <span class="selectorDot selectedDot mx-1" v-if="index==3"></span>
+                  <span class="selectorDot mx-1" v-else v-on:click="index = 3"></span>
+                  <span class="selectorDot selectedDot mx-1" v-if="index==4"></span>
+                  <span class="selectorDot mx-1" v-else v-on:click="index = 4"></span>
+                  <span class="selectorDot selectedDot mx-1" v-if="index==5"></span>
+                  <span class="selectorDot mx-1" v-else v-on:click="index = 5"></span>
                   
                </div>
             </div>
