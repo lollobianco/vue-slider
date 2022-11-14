@@ -15,20 +15,16 @@ var app = new Vue(
 
             ],
 
-            dots: [ 
-               
-               {dot: 'selectedDot'},
-               {dot: 'selectedDot'},
-               {dot: 'selectedDot'},
-               {dot: 'selectedDot'},
-               {dot: 'selectedDot'},
-               {dot: 'selectedDot'},
-            ],
-
             index: 0,
-            indexDot: 0,
 
 	      },
+
+         mounted(){
+
+            //Entra quando l'applicativo vue ha caricato el: #app
+            this.attivaIntervallo();
+
+         },
 
 		   methods:{
 			
@@ -57,6 +53,15 @@ var app = new Vue(
                }
 
             },
+
+
+            //Funzione che cambia immagine automaticamente
+
+            attivaIntervallo(){
+
+               setInterval(() => {this.changePhotoRight()}, 2700)
+
+            }
 
 		   }
 	}
